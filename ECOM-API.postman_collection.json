@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "38fa7b19-93e5-412f-a010-6ead8e9c0e16",
+		"name": "ECOM-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43614196",
+		"_collection_link": "https://anshumannbele.postman.co/workspace/Anshumann-Bele's-Workspace~9f255981-eb5a-410d-895d-bba69bc80efe/collection/43614196-38fa7b19-93e5-412f-a010-6ead8e9c0e16?action=share&source=collection_link&creator=43614196"
+	},
+	"item": [
+		{
+			"name": "https://ecom-api-2ube.onrender.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ecom-api-2ube.onrender.com",
+					"protocol": "https",
+					"host": [
+						"ecom-api-2ube",
+						"onrender",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get prodct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ecom-api-2ube.onrender.com/api/product",
+					"protocol": "https",
+					"host": [
+						"ecom-api-2ube",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Anshumann\",\r\n    \"email\": \"Shoestinfoil@gml.com\",\r\n    \"password\": \"password\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-2ube.onrender.com/api/customer",
+					"protocol": "https",
+					"host": [
+						"ecom-api-2ube",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Anshumann\",\r\n    \"email\": \"Shoestinfoil@gml.com\",\r\n    \"password\": \"password\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-2ube.onrender.com/api/customer/login",
+					"protocol": "https",
+					"host": [
+						"ecom-api-2ube",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"customer",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post api/category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dategory\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-2ube.onrender.com/api/category",
+					"protocol": "https",
+					"host": [
+						"ecom-api-2ube",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post api/product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5ZjQ3YjE3ZDVjMjAwNTZlYTE3ZCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MzQyOTUwNX0.jHainUlpTwgp-z3Ji0HpwYgik7I8_AsbyGsDtnfJI28",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shoes\",\r\n    \"price\": \"15000\",\r\n    \"category\": \"67ea9e4bb17d5c20056ea17a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-2ube.onrender.com/api/product",
+					"protocol": "https",
+					"host": [
+						"ecom-api-2ube",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
