@@ -13,6 +13,10 @@ app.get("/", (req, res)=>{
     res.send("home")
 })
 
+app.get("/about",(req, res)=>{
+    res.send("about")
+})
+
 app.use("/api/product", productRoutes)
 app.use("/api/category", categoryRoutes)
 app.use("/api/customer", customerRoute)
